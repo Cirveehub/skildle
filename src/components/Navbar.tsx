@@ -18,14 +18,14 @@ const Navbar = ({ onOpenWaitlist }: NavbarProps) => {
 
   return (
     <nav className="w-full fixed top-4 md:top-6 z-50">
-      <div className="max-w-[1200px] mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between h-[72px] px-6 md:px-8 bg-white rounded-full shadow-[0px_11px_4px_0px_rgba(0,0,0,0.07)] relative z-50">
+      <div className="max-w-300 mx-auto px-4 md:px-8">
+        <div className="flex items-center justify-between h-18 px-6 md:px-8 bg-white rounded-full shadow-[0px_11px_4px_0px_rgba(0,0,0,0.07)] relative z-50">
           {/* logo */}
-          <a href="/" className="flex-shrink-0">
+          <a href="/" className="shrink-0">
             <img
               src={skildleLogo}
               alt="Skildle"
-              className="h-[32px] w-auto"
+              className="h-8 w-auto"
             />
           </a>
 
@@ -52,7 +52,7 @@ const Navbar = ({ onOpenWaitlist }: NavbarProps) => {
 
           {/*  Menu Button */}
           <button
-            className="md:hidden flex flex-col justify-center items-center gap-[5px] p-2 w-10 h-10"
+            className="md:hidden flex flex-col justify-center items-center gap-1.25 p-2 w-10 h-10"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -69,7 +69,7 @@ const Navbar = ({ onOpenWaitlist }: NavbarProps) => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="absolute top-[84px] left-6 right-6 md:hidden bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 p-6 z-40"
+              className="absolute top-21 left-6 right-6 md:hidden bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 p-6 z-40"
             >
               <ul className="flex flex-col gap-6 items-center">
                 {navLinks.map((link) => (

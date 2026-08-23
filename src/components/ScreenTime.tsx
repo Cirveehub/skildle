@@ -82,7 +82,7 @@ const ScreenTime = () => {
       </div>
 
       <motion.div 
-        className="max-w-[1000px] mx-auto px-4 md:px-8 text-center relative z-10"
+        className="max-w-250 mx-auto px-4 md:px-8 text-center relative z-10"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -102,7 +102,7 @@ const ScreenTime = () => {
             things to do with them?
           </span>
           <motion.span 
-            className="inline-flex align-middle mx-3 w-[76px] h-[36px] md:w-[86px] md:h-[42px] bg-black rounded-full overflow-hidden relative justify-center items-center cursor-pointer"
+            className="inline-flex align-middle mx-3 w-19 h-9 md:w-21.5 md:h-10.5 bg-black rounded-full overflow-hidden relative justify-center items-center cursor-pointer"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >

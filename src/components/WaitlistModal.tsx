@@ -60,7 +60,7 @@ const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-100 flex items-center justify-center p-4"
           >
             {/* Modal Content */}
             <motion.div
@@ -68,7 +68,7 @@ const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose }) => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-white rounded-[32px] shadow-2xl w-full max-w-md overflow-hidden relative"
+              className="bg-white rounded-4xl shadow-2xl w-full max-w-md overflow-hidden relative"
             >
               {/* Close  */}
               <button 
@@ -82,7 +82,7 @@ const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose }) => {
 
               <div className="p-8 md:p-10">
                 <div className="mb-8 text-center">
-                  <div className="w-12 h-12 bg-[#fcff00] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 bg-custom-yellow rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12 22L12 2" stroke="black" strokeWidth="2.5" strokeLinecap="round"/>
                       <path d="M22 12L2 12" stroke="black" strokeWidth="2.5" strokeLinecap="round"/>
@@ -98,7 +98,7 @@ const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose }) => {
                     animate={{ opacity: 1, y: 0 }}
                     className="flex flex-col items-center justify-center py-8 text-center"
                   >
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 text-[#0a8a52]">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 text-custom-green">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
