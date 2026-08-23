@@ -51,7 +51,7 @@ const ScreenTime = () => {
   }, [controls]);
 
   return (
-    <section id="why-skildle" className="relative w-full bg-[#fdfdfd] py-20 lg:py-32 px-6 lg:px-10 overflow-hidden">
+    <section id="why-skildle" className="relative w-full bg-[#fdfdfd] py-20 lg:py-32 overflow-hidden">
       <div className="absolute top-8 right-8 lg:right-40 opacity-70">
         <svg
           width="160"
@@ -93,11 +93,11 @@ const ScreenTime = () => {
         </h2>
 
         <div className="text-[20px] md:text-[25px] leading-[1.65] text-custom-black/90 font-medium">
-          Kids are growing up with screens. Instead of just
+          Kids are growing up with screens. Instead of just{" "}
           <br className="hidden md:block" />
           taking them away — what if we gave kids{" "}
           <span className="text-custom-orange font-normal">
-            better
+            better{" "}
             <br className="hidden md:block" />
             things to do with them?
           </span>
@@ -113,11 +113,11 @@ const ScreenTime = () => {
               style={{ objectPosition: "45% 20%", transform: "scale(2.5)" }}
             />
           </motion.span>
-          Skildle turns idle
+          Skildle turns idle{" "}
           <br className="hidden md:block" />
-          moments into time to think, discover, create, and
+          moments into time to think, discover, create, and{" "}
           <br className="hidden md:block" />
-          grow. Without making after-class feel like more
+          grow. Without making after-class feel like more{" "}
           <br className="hidden md:block" />
           school.
         </div>
