@@ -13,7 +13,7 @@ const Mission = () => {
         </span>
       </div>
 
-      <div className="max-w-[1300px] mx-auto px-4 md:px-8 relative z-10">
+      <div className="max-w-325 mx-auto px-4 md:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16 lg:mb-24 gap-8">
           <motion.h2 
             className="font-heading font-bold text-[48px] lg:text-[64px] text-white tracking-tight"
@@ -25,7 +25,7 @@ const Mission = () => {
             Mission
           </motion.h2>
           <motion.p 
-            className="text-white/80 text-[15px] lg:text-[17px] leading-[1.6] max-w-[480px]"
+            className="text-white/80 text-[15px] lg:text-[17px] leading-[1.6] max-w-120"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -43,7 +43,7 @@ const Mission = () => {
           {cards.map((_, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-[12px] p-2 flex flex-col"
+              className="bg-white rounded-xl p-2 flex flex-col"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -51,7 +51,7 @@ const Mission = () => {
               whileHover={{ y: -10 }}
             >
               {/*  Image */}
-              <div className="w-full aspect-[4/5] rounded-[12px] overflow-hidden relative mb-4">
+              <div className="w-full aspect-4/5 rounded-xl overflow-hidden relative mb-4">
                 <img 
                   src={heroImg} 
                   alt="Kid reading a book" 
@@ -72,7 +72,7 @@ const Mission = () => {
                 
                 <div className="flex items-center gap-1.5 bg-[#f8f9fa] px-2.5 py-1 rounded-full border border-gray-100">
                   <span className="text-[12px] font-bold text-custom-black">+50</span>
-                  <div className="w-[14px] h-[14px] rounded-full bg-[#ffb800] flex items-center justify-center">
+                  <div className="w-3.5 h-3.5 rounded-full bg-[#ffb800] flex items-center justify-center">
                     <svg width="8" height="8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" fill="white" />
                     </svg>

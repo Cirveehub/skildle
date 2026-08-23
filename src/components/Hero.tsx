@@ -19,10 +19,10 @@ const Hero = ({ onOpenWaitlist }: HeroProps) => {
     <section className="w-full bg-white overflow-hidden pt-24">
       <div className=" pl-4 md:pl-38 pt-8 lg:pt-10 relative">
         {/* Desktop View */}
-        <div className="hidden lg:flex flex-row items-start gap-0 relative min-h-[540px]">
+        <div className="hidden lg:flex flex-row items-start gap-0 relative min-h-135">
           <div className="relative z-10 w-[46%] pt-6 pb-10">
             <div className="flex items-center gap-2">
-              <span className="block w-[7px] h-[7px] bg-custom-orange rounded-full flex-shrink-0"></span>
+              <span className="block w-1.75 h-1.75 bg-custom-orange rounded-full shrink-0"></span>
               <span className="text-[10.5px] font-semibold tracking-[0.14em] uppercase text-custom-black">
                 For kids ages 6–15 and their parents.
               </span>
@@ -36,7 +36,7 @@ const Hero = ({ onOpenWaitlist }: HeroProps) => {
               <span className="text-custom-orange">Skill Time</span>
             </h1>
 
-            <div className="border-l-[3px] border-custom-black pl-5 mb-5 max-w-[400px]">
+            <div className="border-l-[3px] border-custom-black pl-5 mb-5 max-w-100">
               <p className="text-[13.5px] leading-[1.8] text-custom-black/70 font-normal">
                 Skildle is the after-class companion that gives kids better
                 things to do with their screen time — games, discovery, reading,
@@ -50,7 +50,7 @@ const Hero = ({ onOpenWaitlist }: HeroProps) => {
               className="inline-flex items-center gap-3 bg-custom-black text-white text-[14px] font-semibold px-6 py-3 rounded-full hover:bg-custom-black-light transition-colors duration-200"
             >
               Get Early Access
-              <span className="flex items-center justify-center w-[26px] h-[26px] bg-[#fcff00] rounded-full">
+              <span className="flex items-center justify-center w-6.5 h-6.5 bg-custom-yellow rounded-full">
                 <svg
                   width="12"
                   height="12"
@@ -71,7 +71,7 @@ const Hero = ({ onOpenWaitlist }: HeroProps) => {
           </div>
 
           {/* Right  */}
-          <div className="absolute right-0 bottom-[20px] w-[65%] h-full flex items-end justify-end overflow-visible pointer-events-none">
+          <div className="absolute right-0 bottom-5 w-[65%] h-full flex items-end justify-end overflow-visible pointer-events-none">
             {/*  circle  */}
             <div
               className="absolute bg-custom-orange rounded-full pointer-events-auto"
@@ -88,8 +88,8 @@ const Hero = ({ onOpenWaitlist }: HeroProps) => {
               className="absolute z-20 flex items-center justify-center pointer-events-auto"
               style={{ top: "7%", left: "16%", transform: "rotate(-24deg)" }}
             >
-              <div className="relative w-[140px] h-[66px] rounded-[50%] border-1 border-black flex items-center justify-center overflow-hidden">
-                <div className="absolute w-[66px] h-[66px] rounded-full bg-[#0391ff] border-1 border-black flex items-center justify-center">
+              <div className="relative w-35 h-16.5 rounded-[50%] border border-black flex items-center justify-center overflow-hidden">
+                <div className="absolute w-16.5 h-16.5 rounded-full bg-custom-blue border border-black flex items-center justify-center">
                   <motion.svg
                     width="24"
                     height="24"
@@ -116,7 +116,7 @@ const Hero = ({ onOpenWaitlist }: HeroProps) => {
             <img
               src={heroImg}
               alt="Happy kids using Skildle on their phones"
-              className="relative z-10 w-full max-w-[650px] h-auto object-contain object-bottom pointer-events-auto"
+              className="relative z-10 w-full max-w-162.5 h-auto object-contain object-bottom pointer-events-auto"
               style={{ marginBottom: "-10px" }}
             />
           </div>
@@ -125,7 +125,7 @@ const Hero = ({ onOpenWaitlist }: HeroProps) => {
         {/* Mobile View */}
         <div className="flex lg:hidden flex-col items-start relative w-full pt-2 px-2 md:px-0">
           <div className="flex items-center gap-2 mb-4">
-            <span className="block w-[6px] h-[6px] bg-custom-orange rounded-full flex-shrink-0"></span>
+            <span className="block w-1.5 h-1.5 bg-custom-orange rounded-full shrink-0"></span>
             <span className="text-[10px] md:text-[12px] font-bold tracking-[0.12em] uppercase text-custom-black">
               For kids ages 6–15 and their parents.
             </span>
@@ -135,7 +135,7 @@ const Hero = ({ onOpenWaitlist }: HeroProps) => {
             Turn Idle<br />Time Into<br /><span className="text-custom-orange">Skill Time</span>
           </h1>
 
-          <div className="border-l-[3px] border-custom-black pl-4 mb-8 max-w-[400px]">
+          <div className="border-l-[3px] border-custom-black pl-4 mb-8 max-w-100">
             <p className="text-[14px] md:text-[16px] leading-[1.6] text-custom-black/80 font-medium">
               Skildle is the after-class companion that gives kids better
               things to do with their screen time — games, discovery, reading,
@@ -149,7 +149,7 @@ const Hero = ({ onOpenWaitlist }: HeroProps) => {
             className="inline-flex items-center gap-3 bg-custom-black text-white text-[14px] font-semibold px-6 py-3 rounded-full hover:bg-black transition-colors duration-200 z-20 relative"
           >
             Get Early Access
-            <span className="flex items-center justify-center w-[26px] h-[26px] bg-[#fcff00] rounded-full">
+            <span className="flex items-center justify-center w-6.5 h-6.5 bg-custom-yellow rounded-full">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -158,12 +158,12 @@ const Hero = ({ onOpenWaitlist }: HeroProps) => {
 
           <div className="relative w-full flex items-end justify-center mt-12 pt-12 overflow-visible">
             {/*  Circle */}
-            <div className="absolute bg-custom-orange rounded-full w-[280px] h-[280px] md:w-[400px] md:h-[400px] -bottom-[20px] md:-bottom-[40px] -right-[10%] z-0"></div>
+            <div className="absolute bg-custom-orange rounded-full w-70 h-70 md:w-100 md:h-100 -bottom-5 md:-bottom-10 right-[-10%] z-0"></div>
             
             {/*  Star */}
             <div className="absolute top-0 left-[5%] md:left-[20%] z-20" style={{ transform: "rotate(-15deg)" }}>
-              <div className="relative w-[100px] h-[48px] rounded-[50%] border-1 border-black flex items-center justify-center overflow-hidden">
-                <div className="absolute w-[48px] h-[48px] rounded-full bg-[#0391ff] border-1 border-black flex items-center justify-center">
+              <div className="relative w-25 h-12 rounded-[50%] border border-black flex items-center justify-center overflow-hidden">
+                <div className="absolute w-12 h-12 rounded-full bg-custom-blue border border-black flex items-center justify-center">
                   <motion.svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" animate={{ rotate: 360 }} transition={{ duration: 6, ease: "linear", repeat: Infinity }}>
                     <path d="M12 0C12 7 17 12 24 12C17 12 12 17 12 24C12 17 7 12 0 12C7 12 12 7 12 0Z" fill="black" />
                   </motion.svg>
@@ -172,7 +172,7 @@ const Hero = ({ onOpenWaitlist }: HeroProps) => {
             </div>
 
             {/*  Image */}
-            <img src={heroImg} alt="Kids" className="relative z-10 w-[95%] max-w-[450px] h-auto object-contain" />
+            <img src={heroImg} alt="Kids" className="relative z-10 w-[95%] max-w-112.5 h-auto object-contain" />
           </div>
         </div>
       </div>

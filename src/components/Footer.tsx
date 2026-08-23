@@ -33,7 +33,7 @@ const Footer = ({ onOpenWaitlist }: FooterProps) => {
             Join the Waitlist
             <div className="w-7 h-7 bg-black rounded-full flex items-center justify-center shadow-sm">
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5">
-                <path d="M5 19L19 5M19 5V19M19 5H5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-[#fcff00]"/>
+                <path d="M5 19L19 5M19 5V19M19 5H5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-custom-yellow"/>
               </svg>
             </div>
           </button>
@@ -51,7 +51,7 @@ const Footer = ({ onOpenWaitlist }: FooterProps) => {
         </div>
 
         <div className="border-t border-white/10 pt-16 flex flex-col items-center justify-center relative overflow-hidden">
-          <h1 className="text-[120px] md:text-[200px] lg:text-[260px] font-black tracking-tighter text-white/[0.03] leading-[0.8] select-none">
+          <h1 className="text-[120px] md:text-[200px] lg:text-[260px] font-black tracking-tighter text-white/3 leading-[0.8] select-none">
             SKILDLE
           </h1>
           <p className="text-white/20 text-xs md:text-sm mt-8 text-center absolute bottom-0 bg-[#101010] px-4">
