@@ -40,7 +40,7 @@ const Mission = () => {
 
         {/* Cards  */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {cards.map((item, index) => (
+          {cards.map((_, index) => (
             <motion.div
               key={index}
               className="bg-white rounded-[12px] p-2 flex flex-col"

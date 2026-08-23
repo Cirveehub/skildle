@@ -1,4 +1,4 @@
-import React from 'react';
+
 import journalBg from '../assets/journalbg.png';
 import journalImg from '../assets/journalimg.png';
 

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import shoe from "../assets/shoe.svg"
 import parentImg from "../assets/parent.png"
@@ -37,7 +37,7 @@ const ParentJoin = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [count, setCount] = useState(0);
   const [hasReachedTrophy, setHasReachedTrophy] = useState(false);
-  const autoPlayTimerRef = useRef(null);
+  const autoPlayTimerRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     if (isSectionInView) {

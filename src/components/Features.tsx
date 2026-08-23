@@ -71,7 +71,7 @@ const featuresData = [
 const Features = () => {
   return (
     <section id="features" className="w-full bg-[#fdfdfd] pb-16 lg:pb-24">
-      <div className="max-w-[1300px] mx-auto px-4 md:px-8">
+      <div className="max-w-325 mx-auto px-4 md:px-8">
         <motion.h2 
           className="font-heading font-bold text-[36px] md:text-[48px] lg:text-[56px] text-center text-custom-black mb-12 lg:mb-16 tracking-tight"
           initial={{ opacity: 0, y: 20 }}
@@ -85,7 +85,7 @@ const Features = () => {
           {featuresData.map((feature, index) => (
             <motion.div 
               key={feature.id}
-              className={`${feature.colSpan} ${feature.bgColor} rounded-[24px] border-[2px] border-black px-5 py-6 md:px-8 flex flex-col justify-start h-full`}
+              className={`${feature.colSpan} ${feature.bgColor} rounded-3xl border-2 border-black px-5 py-6 md:px-8 flex flex-col justify-start h-full`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

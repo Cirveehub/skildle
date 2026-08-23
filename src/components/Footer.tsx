@@ -8,13 +8,13 @@ interface FooterProps {
 const Footer = ({ onOpenWaitlist }: FooterProps) => {
   return (
     <footer className="relative bg-[#101010] text-white pt-24 pb-8">
-      <div className="absolute top-0 left-0 w-full h-[200px] bg-[#0391ff] z-0"></div>
+      <div className="absolute top-0 left-0 w-full h-50 bg-custom-blue z-0"></div>
 
-      <div className="max-w-[1300px] mx-auto px-4 md:px-8 relative z-10 pt-12 pb-12">
+      <div className="max-w-325 mx-auto px-4 md:px-8 relative z-10 pt-12 pb-12">
         
-        <div className="bg-[#050505] rounded-[32px] md:rounded-[48px] py-16 md:py-24 px-8 md:px-16 text-center shadow-2xl mb-24 border border-white/5">
+        <div className="bg-[#050505] rounded-4xl md:rounded-[48px] py-16 md:py-24 px-8 md:px-16 text-center shadow-2xl mb-24 border border-white/5">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1c1c1c] mb-8">
-            <div className="w-2 h-2 rounded-full bg-[#fcff00]"></div>
+            <div className="w-2 h-2 rounded-full bg-custom-yellow"></div>
             <span className="text-xs font-bold text-white/90 uppercase tracking-wider">After class, there's Skildle</span>
           </div>
           
@@ -28,7 +28,7 @@ const Footer = ({ onOpenWaitlist }: FooterProps) => {
 
           <button 
             onClick={onOpenWaitlist}
-            className="inline-flex items-center gap-3 bg-[#fcff00] text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:-translate-y-1 transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-custom-yellow text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:-translate-y-1 transition-all duration-300"
           >
             Join the Waitlist
             <div className="w-7 h-7 bg-black rounded-full flex items-center justify-center shadow-sm">
