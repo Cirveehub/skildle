@@ -1,4 +1,4 @@
-
+import earnImg from '../assets/earn.png';
 
 const Earn = () => {
   return (
@@ -18,7 +18,7 @@ const Earn = () => {
         <div className="relative flex justify-center md:justify-end">
           <div className="relative w-full max-w-112.5">
             <img 
-              src="/src/assets/earn.png" 
+              src={earnImg} 
               alt="Skildle Coin" 
               className="w-full h-auto drop-shadow-2xl transition-transform duration-500 hover:scale-105 hover:rotate-3"
             />
