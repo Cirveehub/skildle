@@ -70,7 +70,6 @@ const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose }) => {
               onClick={(e) => e.stopPropagation()}
               className="bg-white rounded-4xl shadow-2xl w-full max-w-md overflow-hidden relative"
             >
-              {/* Close  */}
               <button 
                 onClick={onClose}
                 className="absolute top-6 right-6 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 hover:text-gray-900 transition-colors z-10"
@@ -146,7 +145,7 @@ const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose }) => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all"
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="08123456789"
                       />
                     </div>
 
